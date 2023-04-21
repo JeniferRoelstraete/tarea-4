@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daflogi Cake - Raffle</title>
+    <link rel="stylesheet" href="./estilo.css">
+    <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="fondo-nav">
+        <div>
+            <a href="./index.html">Home</a>
+            <a href="./aboutUs.html">AboutUs</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./information.html">Information</a>
+            <a href="./benefitsTips.html">Benefits</a>
+            <a href="#">Raffle</a>
+        </div>
+
+        <img src="Coffee-Task2/logo.png" alt="" width="50">
+    </div>
+
+    <div class="centrar margen-inferior-reducido">
+        <h1>Daflogi Cake</h1>
+        <h2>Raffle</h2>
+    </div>
+
+    <h3 class="margen-inferior-reducido margenes-laterales centrado">You can participante in a raffle. The prize is a coffee pot</h3>
+    <div class="contenedor-principal-sorteo">
+        <div class="contenedor-imagenes-sorteo">
+            <img class="imagen-sorteo" src="Coffee-Task2/coffee-tarea.jpg" alt="">
+            <img class="imagen-sorteo" src="Coffee-Task2/coffee-tarea4.jpg" alt="">
+        </div>
+
+        <div>
+            <form class="formulario-sorteo" action="./show_data.html" method="get">
+                <fieldset class="contenedor-formulario-sorteo padding-formulario-sorteo">
+
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Name">
+
+                    <label for="surname">Surname</label>
+                    <input type="text" id="surname" name="surname" placeholder="Surname">
+
+                    <label for="correo">Email</label>
+                    <input type="email" id="correo" name="email" placeholder="Email">
+
+                    <label for="message">Message</label>
+                    <input type="text" id="message" name="message" placeholder="Message">
+
+                    <label for="color-picker">What color would you like the coffee pot:</label>
+                    <select name="selected-color" id="color-picker">
+                        <option value=" ">Pick one</option>
+                        <option>Black</option>
+                        <option>Lightblue</option>
+                        <option>Pink</option>
+                        <option>Red</option>
+                        <option>Yellow</option>
+                    </select>
+
+                    <label for="country-picker">Country</label>
+                    <select name="selected-country" id="country-picker">
+                        <option value=" ">Pick one</option>
+                        <option>Argentina</option>
+                        <option>Brasil</option>
+                        <option>Chile</option>
+                        <option>España</option>
+                        <option>Uruguay</option>
+                    </select>
+
+                    <label class="margen-superior-reducido">Payment Options</label>
+                    <div class="contenedor-opciones-pago">
+                        <div>
+                            <input type="radio" id="cash-only" name="payment-options" value="cash">
+                            <label for="cash-only">Cash</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="credit-card" name="payment-options" value="credit">
+                            <label for="credit-card">Credit Cards</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="debit-card" name="payment-options" value="debit">
+                            <label for="debit-card">Debit Cards</label>
+                        </div>
+                    </div>
+
+                    <label class="margen-superior-reducido" for="services">Services</label>
+                    <textarea name="service" id="services" cols="22" rows="5"></textarea>
+                    <div>
+                        <input type="checkbox" name="terms-and-conditions" id="terms">
+                        <label for="terms">I accept terms and conditions...</label>
+                    </div>
+
+                </fieldset>
+                <div class="margen-superior-reducido centrado">
+                    <input class="boton-enviar" type="submit" value="Send">
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d225470.77384459626!2d-82.45428045!3d27.99448255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2b782b3b9d1e1%3A0xa75f1389af96b463!2sTampa%2C%20Florida%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1682022552217!5m2!1ses-419!2sar"
+          width="125"
+          height="100"
+          style="border: 0"
+          allowfullscreen=""  
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+    </footer>
+</body>
+
+
+</html>
